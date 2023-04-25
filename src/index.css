@@ -30,8 +30,8 @@ body {
   display: flex;
   font-size: 2rem;
   justify-content: flex-end;
-  padding-right: 1rem;
-  border: 2px solid #626262;
+  border: 2px solid #d5d5d5;
+  padding: 0.5rem 1rem 0.5rem 0;
 }
 
 #calculator table tbody {
@@ -51,8 +51,8 @@ body {
   height: 100%;
   width: 100%;
   font-size: 1.5rem;
-  border-radius: 5px;
   border-color: #d5d5d5;
+  border-width: 1px;
 }
 
 .buttons-row {
