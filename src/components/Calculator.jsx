@@ -1,48 +1,96 @@
 import React from 'react';
 
-const Calculator = () => {
-  return (
-    <section>
+const Calculator = () => (
+  <>
+    <section id="calculator">
       <table>
         <thead>
-          <tr>
+          <tr className="result">
             <th>0</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>AC</td>
-            <td>+/-</td>
-            <td>%</td>
-            <td>÷</td>
+          <tr className="buttons-row">
+            <td>
+              <button type="button">AC</button>
+            </td>
+            <td>
+              <button type="button">+/-</button>
+            </td>
+            <td>
+              <button type="button">%</button>
+            </td>
+            <td>
+              <button type="button" className="orange">
+                ÷
+              </button>
+            </td>
           </tr>
-          <tr>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <td>x</td>
+          <tr className="buttons-row">
+            <td>
+              <button type="button">7</button>
+            </td>
+            <td>
+              <button type="button">8</button>
+            </td>
+            <td>
+              <button type="button">9</button>
+            </td>
+            <td>
+              <button type="button" className="orange">
+                x
+              </button>
+            </td>
           </tr>
-          <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>-</td>
+          <tr className="buttons-row">
+            <td>
+              <button type="button">4</button>
+            </td>
+            <td>
+              <button type="button">5</button>
+            </td>
+            <td>
+              <button type="button">6</button>
+            </td>
+            <td>
+              <button type="button" className="orange">
+                -
+              </button>
+            </td>
           </tr>
-          <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>+</td>
+          <tr className="buttons-row">
+            <td>
+              <button type="button">1</button>
+            </td>
+            <td>
+              <button type="button">2</button>
+            </td>
+            <td>
+              <button type="button">3</button>
+            </td>
+            <td>
+              <button type="button" className="orange">
+                +
+              </button>
+            </td>
           </tr>
-          <tr>
-            <td>0</td>
-            <td>.</td>
-            <td>=</td>
+          <tr className="buttons-last-row">
+            <td>
+              <button type="button">0</button>
+            </td>
+            <td>
+              <button type="button">.</button>
+            </td>
+            <td>
+              <button type="button" className="orange">
+                =
+              </button>
+            </td>
           </tr>
         </tbody>
       </table>
     </section>
-  );
-};
+  </>
+);
 
 export default Calculator;
