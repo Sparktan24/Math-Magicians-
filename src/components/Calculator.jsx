@@ -4,6 +4,9 @@ import calculate from '../logic/calculate';
 
 const Calculator = () => {
   const [value, setValue] = useState({});
+  /* const [result, setResult] = useState(
+    value.next ? setResult(value.next) : value.total ? setResult(value.total) : 0
+    ); */
   //  REFACTOR: each Button to array with value, color(classname), function? columns?
   //  and use map to render each button (re-design structure)
 
