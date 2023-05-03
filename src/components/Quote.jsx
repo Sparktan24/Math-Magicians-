@@ -29,8 +29,25 @@ const Quote = () => {
   if (hasError) return <div>Something went wrong</div>;
   if (isLoading) return <div>Loading</div>; //  API NOT WORKING PROPERLY RIGHT NOW
   return (
-    <div>
-      {data && data.map((item) => <p key={item.author}>{item.quote}</p>)}
+    <div className="quote">
+      {/* {data && data.map((item) => <p key={item.author}>{item.quote}</p>)} */}
+      {data
+        && data.map((item) => {
+          const { author, quote } = item;
+          return (
+            <div key={author}>
+              <h3>
+                Author:&nbsp;
+                {author}
+              </h3>
+              <p>
+                &quot;
+                {quote}
+                &quot;
+              </p>
+            </div>
+          );
+        })}
     </div>
   );
 };
